@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/borde_curvo_gps"
+    app:cornerRadius="20dp"
+    android:layout_margin="15dp"
+    android:padding="@dimen/activity_vertical_margin_phone"
+    android:layout_gravity="center">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltTipoConfirmacion"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        app:lottie_rawRes="@raw/error2"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin_phone"
+        />
+
+    <TextView
+        android:id="@+id/txtTiuloAfirmacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:fontFamily="@font/real_text_pro_book"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-25dp"
+        android:maxLines="15"
+        android:ellipsize="end"
+        android:textColor="#34214A" />
+
+    <TextView
+        android:id="@+id/txtMensajeLamentable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:fontFamily="@font/real_text_pro_book"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:maxLines="15"
+        android:ellipsize="end"
+        android:textColor="#17062B" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnActivar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="activar"
+            android:fontFamily="@font/real_text_pro_book"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_salir"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="salir"
+            android:fontFamily="@font/real_text_pro_book"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_danger"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

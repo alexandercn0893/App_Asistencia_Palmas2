@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/redondo_blanco"
+    android:padding="@dimen/activity_horizontal_margin_phone"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin_phone"
+        app:lottie_autoPlay="true"
+        android:id="@+id/imgTipoMensaje" />
+
+    <TextView
+        android:id="@+id/txtTiuloError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-25dp"
+        android:maxLines="15"
+        android:ellipsize="end"
+        android:textColor="#7B2823" />
+
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="8"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorNegro" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_redondo_default"
+        android:textColor="@color/black"
+        android:text="Aceptar"
+        android:fontFamily="@font/real_text_pro_book"
+        android:textAlignment="center"
+        app:backgroundTint="@null"
+        android:textSize="15sp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/redondo_blanco"
+    android:padding="@dimen/activity_vertical_margin_phone"
+    android:layout_gravity="center">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltTipoConfirmacion"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin_phone"
+        app:lottie_autoPlay="true"/>
+
+    <TextView
+        android:id="@+id/txtMensajeConfirmacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:maxLines="8"
+        android:ellipsize="end"
+        android:textColor="@color/darktech" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnCancelarAdvertencia"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/label_card_phone"
+            android:fontFamily="@font/real_text_pro_book"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btn_redondo_azul"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/btnAceptarConfirmacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Aceptar"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/label_card_phone"
+            android:fontFamily="@font/real_text_pro_book"
+            android:background="@drawable/btn_danger"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

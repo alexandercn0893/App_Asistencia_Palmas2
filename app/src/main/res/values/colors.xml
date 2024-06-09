@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="amarillo_primario">#F8C300</color>
+    <color name="amarillo_secundario">#010101</color>
+    <color name="cancelargps">#AE3333</color>
+
+
+    <color name="colorPrimary">#139947</color>
+    <color name="colorPrimaryTransparent">#66139947</color>
+    <color name="colorPrimaryLight">#BF139947</color>
+    <color name="colorPrimaryDark">#0d6b31</color>
+    <color name="colorAccent">#f50057</color>
+    <color name="colorAccentTransparent">#66f50057</color>
+    <color name="cielo">#EEF7FA</color>
+
+
+    <color name="consultaEntrada">#1565C0</color>
+    <color name="consultaEntradaDark">#104E95</color>
+    <color name="consultaEntradaTransparente">#BF297BD5</color>
+    <color name="registroSalida">#FF5252</color>
+    <color name="registroSalidaDark">#AE3333</color>
+    <color name="registroSalidaTransparente">#BFFF5252</color>
+    <color name="registroEntrada">#366d00</color>
+    <color name="registroEntradaTransparente">#529200</color>
+    <color name="consultaSalida">#ED8A12</color>
+    <color name="consultaSalidaDark">#AA5E03</color>
+    <color name="consultaSalidaTransparente">#BFED8A12</color>
+
+    <color name="RojoOscuro">#C1092B</color>
+
+
+    <color name="colorBlanco">#FFFFFF</color>
+    <color name="colorBlancoTrans">#BFFFFFFF</color>
+    <color name="colorBlancoLayout">#F7F7F7</color>
+    <color name="colorBlancoTransLogin">#99FFFFFF</color>
+    <color name="colorNegro">#000000</color>
+    <color name="colorNegroTransparente">#99000000</color>
+    <color name="letrasPlomas">#8D8585</color>
+
+    <color name="salida">#C93048</color>
+    <color name="salidaDark">#831E2E</color>
+    <color name="salidaTransparente">#BFC93048</color>
+
+    <color name="colorDanger">#D74126</color>
+    <color name="colorDangerTransparent">#99D74126</color>
+    <color name="colorWarning">#CEBA35</color>
+    <color name="colorWarningTransparent">#99CEBA35</color>
+    <color name="colorInfo">#1F59ED</color>
+    <color name="colorSuccess">#019C50</color>
+    <color name="colorSuccessTransparent">#99019C50</color>
+    <color name="VerdeOscuro">#A7B408</color>
+
+    <color name="MoradoOscuro">#330140</color>
+
+    <color name="verde_primario">#093004</color>
+    <color name="verde_secundario">#529200</color>
+
+    <color name="darktech">#010101</color>
+</resources>

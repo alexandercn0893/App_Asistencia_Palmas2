@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lyMainActivity"
+    android:background="@color/white"
+    tools:context=".activity.MenuPrincipal">
+
+
+    <RelativeLayout
+        android:id="@+id/lyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/header_menu_principal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left">
+
+            <ImageView
+                android:id="@+id/imgLogo1"
+                android:layout_marginStart="10dp"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/logo_principal">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblBienvenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/real_text_pro_book"
+                android:text="ASISTENCIA"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/darktech"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/separatorHeader"
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:layout_below="@+id/lblBienvenido"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="end">
+
+           <ImageView
+                android:id="@+id/ltHamburguesa"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_menu_black">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/lblBienvenid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="6dp"
+                android:fontFamily="@font/real_text_pro_book"
+                android:gravity="center"
+                android:text="BIENVENIDO"
+                android:textColor="@color/darktech"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/separatorHeader2"
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:layout_below="@+id/lblBienvenid"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="50dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lblNombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:drawableStart="@drawable/ic_user_black"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/real_text_pro_book"
+                android:paddingStart="35sp"
+                android:text="Jhonatan Alexander Chancafe Neciosup"
+                android:textColor="@color/darktech"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyHeader"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/txtEstadoRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/real_text_pro_book"
+                        android:text="Estado"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:id="@+id/btnRegistroEntrada"
+                        android:layout_height="160dp"
+                        android:layout_width="180dp"
+                        android:padding="@dimen/activity_vertical_margin_phone"
+                        android:background="@drawable/layout_entrada"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:elevation="5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/real_text_pro_book"
+                                android:paddingStart="10dp"
+                                android:text="Registrar Marcación"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/darktech"
+                                android:textSize="19.2sp"
+                                android:textStyle="bold" />
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/ltRegistroEntrada"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/logo_registro_entrada"
+                                android:scaleType="centerCrop"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/marcacion3"
+                                app:lottie_renderMode="software" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:id="@+id/btnVerAsistencia"
+                        android:layout_height="160dp"
+                        android:layout_width="180dp"
+                        android:padding="@dimen/activity_vertical_margin_phone"
+                        android:background="@drawable/layout_entrada"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:elevation="5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="127dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/real_text_pro_book"
+                                android:paddingStart="10dp"
+                                android:text="Mis Marcaciones"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/darktech"
+                                android:textSize="19.2sp"
+                                android:textStyle="bold" />
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/ltverMarcacion"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/logo_registro_entrada"
+                                android:scaleType="centerCrop"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/asistencia"
+                                app:lottie_renderMode="software" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

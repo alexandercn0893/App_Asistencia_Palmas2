@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/redondo_blanco"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/ltCargandoLoading"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"
+            app:lottie_rawRes="@raw/cargando"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_speed="2"
+            />
+
+        <TextView
+            android:id="@+id/txtMensajeLoading"
+            android:layout_marginTop="@dimen/activity_vertical_margin_phone"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_phone"
+            android:text="Espere por favor.."
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
